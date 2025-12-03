@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard WD</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="auth.js" defer></script>
+    <script src="dashboard.js" defer></script>
+  </head>
+  <body class="bg-dark" onload="initDashboard()">
+    <header class="topbar">
+      <div class="topbar-left">
+        <h1>WD PANEL</h1>
+        <span class="topbar-sub">WD Dashboard</span>
+      </div>
+      <div class="topbar-right">
+        <button class="btn-outline" onclick="logout()">Logout</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="stats-grid">
+        <div class="card stat-card">
+          <div class="stat-label">Total WD</div>
+          <div class="stat-value" id="stat-total-wd">-</div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-label">Total Amount</div>
+          <div class="stat-value" id="stat-total-amount">-</div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-label">Pending</div>
+          <div class="stat-value" id="stat-total-pending">-</div>
+        </div>
+      </section>
+
+      <section class="card table-card">
+        <div class="table-header">
+          <h2>Withdraw Logs</h2>
+          <input
+            type="text"
+            id="search"
+            placeholder="Cari username / bank..."
+            oninput="filterTable()"
+          />
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Tanggal</th>
+                <th>Username</th>
+                <th>Nama</th>
+                <th>Bank</th>
+                <th>Amount</th>
+                <th>IP</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody id="wd-list"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

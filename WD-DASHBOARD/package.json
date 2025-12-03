@@ -1,0 +1,13 @@
+
+{
+  "name": "wd-dashboard",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "pg": "^8.16.0"
+  }
+}
