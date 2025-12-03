@@ -1,0 +1,12 @@
+body {margin:0;font-family:Arial;background:#0f0f0f;color:white}
+.login-body{display:flex;justify-content:center;align-items:center;height:100vh}
+.login-box{background:#1a1a1a;padding:30px;border-radius:10px;width:320px;text-align:center}
+.login-box input{width:100%;padding:12px;margin:10px 0;border:none;border-radius:8px;background:#2a2a2a;color:white}
+.login-box button{width:100%;padding:12px;border:none;background:#4c6ef5;color:white;border-radius:8px;font-size:16px;cursor:pointer}
+.sidebar{position:fixed;left:0;top:0;width:220px;height:100%;background:#161616;padding-top:20px}
+.sidebar a{display:block;padding:15px;color:#aaa;text-decoration:none}
+.sidebar a.active,.sidebar a:hover{background:#222;color:white}
+.content{margin-left:230px;padding:30px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:14px;border-bottom:1px solid #333}
+button.copy-btn{background:#4c6ef5;padding:8px 14px;color:white;border:none;border-radius:6px;cursor:pointer}
